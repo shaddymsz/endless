@@ -16,6 +16,7 @@ import ServerComponent from "./components/dashboard/server/server-component";
 import Project from "./components/dashboard/project/project";
 import Leads from "./components/dashboard/leads/leads-component";
 import LeadsChannel from "./components/dashboard/leads/lead-channel/leadChannel";
+import CreateLead from "./components/dashboard/leads/create-lead/create-lead";
 import Profile from "./components/dashboard/leads/lead-profile/lead-profile";
 // widgets
 import General from "./components/widgets/general";
@@ -356,6 +357,10 @@ function Root() {
                   <Route
                     path={`${process.env.PUBLIC_URL}/dashboard/leads-channel`}
                     component={LeadsChannel}
+                  />
+                  <Route
+                    path={`${process.env.PUBLIC_URL}/dashboard/create-lead`}
+                    component={CreateLead}
                   />
                   <Route
                     path={`${process.env.PUBLIC_URL}/dashboard/marketing`}
