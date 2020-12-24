@@ -28,8 +28,7 @@ const FilterTable = ({ data,channel }) => {
   return (
     <Fragment>
       <div className="row">
-        <div className="col-xl-2">
-          <div className="col-xl-12">
+        <div className="col-md-2">
             <div className="card">
               <Collapse isOpen={isFilter}>
                 <div
@@ -44,7 +43,7 @@ const FilterTable = ({ data,channel }) => {
                         <input
                           className="form-control"
                           type="text"
-                          placeholder="Search.."
+                          placeholder="Search"
                           type="text"
                           value={Q}
                           onChange={(e) => setQ(e.target.value)}
@@ -81,9 +80,8 @@ const FilterTable = ({ data,channel }) => {
                 </div>
               </Collapse>
             </div>
-          </div>
         </div>
-        <div className="col-xl-10">
+        <div className="col-md-10">
           <div className="card ">
             <Datatable data={search(data)} />
           </div>
